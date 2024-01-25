@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    
+        <div class="menu-side">
+            <h1>Playlist</h1>
+            <div class="playlist">
+                <h4 class="active"><span></span><i class="bi bi-music-note-list"></i>Playlist</h4>
+                <h4><span></span><i class="bi bi-music-note-list"></i>Last Listening</h4>
+                <h4><span></span><i class="bi bi-music-note-list"></i>Recommended</h4>
+            
+            </div>
+            <div class="menu-song">
+                <div class="btn-s">
+                    <i id="up_scroll" class="bi bi-arrow-up-short" id="pop-song-left"></i>
+                    <i id="down_scroll" class="bi bi-arrow-down-short" id="pop-song-right"></i>
+
+                </div>
+                <div class="playlist">
+                <li class="songitem">
+                    <span>01</span>
+                    <img src="images/cover1.jpeg" alt="Chithha">
+                    <h5>Unakku Thaan
+                        <div class="subtitle">Chithha</div>
+                    </h5>
+                        <i class="bi playListPlay bi-play-circle-fill" id="1"></i>
+                
+
+                </li>
+                <li class="songitem">
+                    <span>02</span>
+                    <img src="images/cover2.jpeg" alt="Ayothi">
+                    <h5>Kaatrodu Pattam Pola
+                        <div class="subtitle">Ayothi</div>
+                    </h5>
+                        <i class="bi playListPlay bi-play-circle-fill" id="2"></i>
+
+                </li>
+                <li class="songitem">
+                    <span>03</span>
+                    <img src="images/cover3.jpeg" alt="Yaaradi Nee Mohini">
+                    <h5>Engeyo partha
+                        <div class="subtitle">Yaaradi Nee Mohini</div>
+                    </h5>
+                        <i class="bi playListPlay bi-play-circle-fill" id="3"></i>
+
+                </li>
+                <li class="songitem">
+                    <span>04</span>
+                    <img src="images/cover4.jpeg" alt="Vaaranam Aayiram">
+                    <h5>Mundhinam Paartheney
+                        <div class="subtitle">Vaaranam Aayiram</div>
+                    </h5>
+                        <i class="bi playListPlay bi-play-circle-fill" id="4"></i>
+
+                </li>
+                <li class="songitem">
+                    <span>05</span>
+                    <img src="images/cover5.jpeg" alt="Jeans">
+                    <h5>Poovukkul
+                        <div class="subtitle">Jeans</div>
+                    </h5>
+                        <i class="bi playListPlay bi-play-circle-fill" id="5"></i>
+
+                </li>
+                <li class="songitem">
+                    <span>06</span>
+                    <img src="images/cover6.jpeg" alt="Maragatha Naanayam">
+                    <h5>Nee Kavithaigala
+                        <div class="subtitle">Maragatha Naanayam</div>
+                    </h5>
+                        <i class="bi playListPlay bi-play-circle-fill" id="6"></i>
+
+                </li>
+            </div>
+            </div>
+        </div>
+        <div class="song-side">
+            <nav>
+                <ul>
+                    <li>Discover <span></span></li>
+                    <li>My Library</li>
+                    <li>Radio </li>
+                </ul>
+                <div class="search">
+                    <i class="bi bi-search"></i>
+                    <input type="text" placeholder="Search Music...">
+                </div>
+                <div class="user">
+                    <img src="images/user.png" alt="user" title="user">
+                </div>
+            </nav>
+            <div class="content">
+                <h1>Best Of Tamil</h1>
+                <p>50 songs with music from artists like Anirudh Ravichander</p>
+                <div class="buttons">
+                    <button>Play</button>
+                    <button>Follow</button>
+                </div>
+            </div>
+            <div class="Popular-song">
+                <div class="h4">
+                    <h4>Popular Song</h4>
+                    <div class="btn-s">
+                        <i id="left_scroll" class="bi bi-arrow-left-short" id="pop-song-left"></i>
+                        <i id="right_scroll" class="bi bi-arrow-right-short" id="pop-song-right"></i>
+
+                    </div>
+                </div>
+                <div class="pop_song">
+                    <li class="songitem">
+                        <div class="img-play">
+                            <img src="images/cover7.jpeg" alt="Vikram Vedha">
+                            <i class="bi playListPlay bi-play-circle-fill" id="7"></i>
+                        </div> 
+                        <h5>Yaanji
+                            <div class="subtitle">Vikram Vedha</div>
+                        
+                        </h5>
+                    </li>
+                    <li class="songitem">
+                        <div class="img-play">
+                            <img src="images/cover8.jpeg" alt="Chithha">
+                            <i class="bi playListPlay bi-play-circle-fill" id="8"></i>
+                        </div> 
+                        <h5>Kangal Edho
+                            <div class="subtitle">Chithha</div>
+                        
+                        </h5>
+                    </li>
+                    <li class="songitem">
+                        <div class="img-play">
+                            <img src="images/cover9.jpeg" alt="Thiruchitrambalam">
+                            <i class="bi playListPlay bi-play-circle-fill" id="9"></i>
+                        </div> 
+                        <h5>Megham Karukatha
+                            <div class="subtitle">Thiruchitrambalam</div>
+                        
+                        </h5>
+                    </li>
+                    <li class="songitem">
+                        <div class="img-play">
+                            <img src="images/cover10.jpeg" alt="Leo">
+                            <i class="bi playListPlay bi-play-circle-fill" id="10"></i>
+                        </div> 
+                        <h5>Naa Ready
+                            <div class="subtitle">Leo</div>
+                        
+                        </h5>
+                    </li>
+                    <li class="songitem">
+                        <div class="img-play">
+                            <img src="images/cover11.jpeg" alt="Master">
+                            <i class="bi playListPlay bi-play-circle-fill" id="11"></i>
+                        </div> 
+                        <h5>Vaathi Coming
+                            <div class="subtitle">Master</div>
+                        
+                        </h5>
+                    </li>
+                    <li class="songitem">
+                        <div class="img-play">
+                            <img src="images/cover12.jpeg" alt="Ethir Neechal">
+                            <i class="bi playListPlay bi-play-circle-fill" id="12"></i>
+                        </div> 
+                        <h5>Ethir Neechal
+                            <div class="subtitle">Ethir Neechal</div>
+                        
+                        </h5>
+                    </li>
+                    <li class="songitem">
+                        <div class="img-play">
+                            <img src="images/cover13.jpeg" alt="Adiyae">
+                            <i class="bi playListPlay bi-play-circle-fill" id="13"></i>
+                        </div> 
+                        <h5>Vaa Senthaazhini
+                            <div class="subtitle">Adiyae</div>
+                        
+                        </h5>
+                    </li>
+                    <li class="songitem">
+                        <div class="img-play">
+                            <img src="images/cover14.jpeg" alt="Joe">
+                            <i class="bi playListPlay bi-play-circle-fill" id="14"></i>
+                        </div> 
+                        <h5>Urugi Urugi
+                            <div class="subtitle">Joe</div>
+                        
+                        </h5>
+                    </li>
+                    <li class="songitem">
+                        <div class="img-play">
+                            <img src="images/cover15.jpeg" alt="Pasumpon">
+                            <i class="bi playListPlay bi-play-circle-fill" id="15"></i>
+                        </div> 
+                        <h5>Thamarai Poovukkum
+                            <div class="subtitle">Pasumpon</div>
+                        
+                        </h5>
+                    </li>
+                    <li class="songitem">
+                        <div class="img-play">
+                            <img src="images/cover16.jfif" alt="Ghilli">
+                            <i class="bi playListPlay bi-play-circle-fill" id="16"></i>
+                        </div> 
+                        <h5>Arjunaru Villu
+                            <div class="subtitle">Ghilli</div>
+                        
+                        </h5>
+                    </li>
+                    <li class="songitem">
+                        <div class="img-play">
+                            <img src="images/cover17.jfif" alt="Naam">
+                            <i class="bi playListPlay bi-play-circle-fill" id="17"></i>
+                        </div> 
+                        <h5>Adi Penne
+                            <div class="subtitle">Naam</div>
+                        
+                        </h5>
+                    </li>
+                    <li class="songitem">
+                        <div class="img-play">
+                            <img src="images/cover18.jfif" alt="Takkar">
+                            <i class="bi playListPlay bi-play-circle-fill" id="18"></i>
+                        </div> 
+                        <h5>Nira
+                            <div class="subtitle">Takkar</div>
+                        
+                        </h5>
+                    </li>
+                </div>
+            </div>
+            <div class="Popular-Artist">
+                <div class="h4">
+                    <h4>Popular Artists</h4>
+                    <div class="btn-s">
+                        <i id="left_scrolls" class="bi bi-arrow-left-short"></i>
+                        <i id="right_scrolls" class="bi bi-arrow-right-short"></i>
+
+                    </div>
+                </div>
+                <div class="item">
+                    <li>
+                        <img src="images/artist/artist1.jfif" alt="" title="Yuvan Shankar Raja">
+                    </li>
+                    <li>
+                        <img src="images/artist/artist2.jfif" alt="" title="Anirudth">
+                    </li>
+                    <li>
+                        <img src="images/artist/artist3.jfif" alt="" title="G.V.Prakash Kumar">
+                    </li>
+                    <li>
+                        <img src="images/artist/artist4.jpg" alt="Yuvan Shankar Raja" title="Yuvan Shankar Raja">
+                    </li>
+                    <li>
+                        <img src="images/artist/artist5.jfif" alt="Anirudth" title="Anirudth">
+                    </li>
+                    <li>
+                        <img src="images/artist/artist6.jfif" alt="G.V.Prakash Kumar" title="G.V.Prakash Kumar">
+                    </li>
+                    <li>
+                        <img src="images/artist/artist7.jfif" alt="Santhosh Naarayanan" title="Santhosh Naarayanan">
+                    </li>
+                    <li>
+                        <img src="images/artist/artist8.jfif" alt="A.R.Rahman" title="A.R.Rahman">
+                    </li>
+                    <li>
+                        <img src="images/artist/artist9.jfif" alt="Hip Hop Aathi" title="Hip Hop Aathi">
+                    </li>
+                    <li>
+                        <img src="images/artist/artist10.jfif" alt="Vijay Antony" title="Vijay Antony">
+                    </li>
+                    <li>
+                        <img src="images/artist/artist11.jfif" alt="Vidhyaasagar" title="Vidhyaasagar">
+                    </li>
+                    <li>
+                        <img src="images/artist/artist12.jpg" alt="Deva" title="Deva">
+                    </li>
+                    <li>
+                        <img src="images/artist/artist13.jpg" alt="Ilayaraja" title="Ilayaraja">
+                    </li>
+                    <li>
+                        <img src="images/artist/artist14.jfif" alt="Harris Jayaraj" title="Harris Jayaraj">
+                    </li>
+                    <li>
+                        <img src="images/artist/artist15.jfif" alt="D.Imman" title="D.Imman">
+                    </li>
+                    <li>
+                        <img src="images/artist/artist16.jfif" alt="Thaman" title="Thaman">
+                    </li>
+                    <li>
+                        <img src="images/artist/artist17.jfif" alt="SivaKarthikeyan" title="SivaKarthikeyan">
+                    </li>
+                    <li>
+                        <img src="images/artist/artist18.jfif" alt="Dhanush" title="Dhanush">
+                    </li>
+                    <li>
+                        <img src="images/artist/artist19.jfif" alt="Vijay Sethupathi" title="Vijay Sethupathi">
+                    </li>
+                </div>
+            </div>
+            <div class="small_screen_master_play">
+                <span id="small_poster_master_play"></span>
+                <h5 id="small_title">Unakku Thaan 
+                    <div class="subtitle">Chithha</div>
+                </h5>
+                <div class="small_icon">
+                    <i class="bi bi-skip-start-fill" id="smallback"></i>
+                    <i class="bi bi-play-fill" id="smallmasterPlay"></i>
+                    <i class="bi bi-skip-end-fill" id="smallnext"></i>
+                </div>
+            </div>
+        </div>
+        
+        <div class="master_play">
+            <div class="wave" id="wave">
+                <div class="wave1"></div>
+                <div class="wave1"></div>
+                <div class="wave1"></div>
+            </div>
+            <span id="poster_master_play"></span>
+            <h5 id="title">Unakku Thaan <br>
+                <div class="subtitle">Chithha</div>
+            </h5>
+            <div class="icon">
+                <i class="bi bi-skip-start-fill" id="back"></i>
+                <i class="bi bi-play-fill" id="masterPlay"></i>
+                <i class="bi bi-skip-end-fill" id="next"></i>
+            </div>
+            
+           
+            <span id="currentStart">0:00</span>
+            <div class="bar">
+                <input type="range" id="seek" min="0" value="0" max="100">
+                <div class="bar2" id="bar2"></div>
+                <div class="dot"></div>
+                
+            </div>
+            <span id="currentEnd">0:00</span>
+            
+            <div class="vol">
+                <i class="bi bi-volume-down-fill" id="vol_icon"></i>
+                <input type="range" id="vol" min="0" value="30" max="100">
+                <div class="vol_bar"></div>
+                <div class="dot" id="vol_dot"></div>
+                    
+            </div>
+        </div>
+        <div class="graph">
+            <span id="smallcurrentStart">0:00</span>
+            <div class="bar">
+                <input type="range" id="small_seek" min="0" value="0" max="100">
+                <div class="bar2" id="small_bar2"></div>
+                <div class="small_dot"></div>
+            </div>
+            <span id="smallcurrentEnd">0:00</span>
+            
+            <div class="vol">
+                <i class="bi bi-volume-down-fill" id="small_vol_icon"></i>
+                <input type="range" id="small_vol" min="0" value="30" max="100">
+                <div class="small_vol_bar"></div>
+                <div class="dot" id="small_vol_dot"></div>
+                    
+            </div>
+    </div>
+</header>
+    <script src="app.js"></script>
+</body>
+</html>
